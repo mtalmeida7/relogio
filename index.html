@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="relógio">
+        <div class="tela">
+            <span id="horas">00</span> :
+            <span id="minutos">00</span> :
+            <span id="segundos">00</span>
+            <span id="formato-hora"></span>
+        </div>
+        <div class="controles">
+            <select id="zona-horaria-select">
+                <optgroup label="América" style="color:white">
+                    <option value="America/Sao_Paulo">São Paulo</option>
+                    <option value="America/New_York">Nova York</option>
+                </optgroup>
+                <optgroup label="Europa" style="color:white">
+                    <option value="Europe/London">Londres</option>
+                    <option value="Europe/Paris">Paris</option>
+                </optgroup>
+                <optgroup label="Ásia" style="color:white">
+                    <option value="Asia/Tokyo">Tóquio</option>
+                    <option value="Asia/Singapore">Cingapura</option>
+                </optgroup>
+                <optgroup label="Oceania" style="color:white">
+                    <option value="Australia/Sydney">Sydney</option>
+                </optgroup>
+            </select>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

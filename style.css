@@ -1,0 +1,73 @@
+body {
+    background-color: #333;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.relógio {
+    width: 30rem;
+    height: 12.5rem;
+    background-color: #444;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out;
+}
+
+.tela {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #ff0000;
+    text-align: center;
+    padding-top: 2.5rem;
+    text-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.5);
+}
+
+.controles {
+    padding: 1.25rem;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+#zona-horaria-select {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.625rem;
+    background-color: #555;
+    color: #ff0000;
+    transition: all 0.3s ease-in-out;
+}
+
+#zona-horaria-select:hover {
+    background-color: #666;
+}
+
+#zona-horaria-select:active {
+    transform: scale(0.9);
+    color: white
+}
+
+#zona-horaria-select option {
+    background-color: #555;
+    color: #ff0000;
+    border-radius: 0.3125rem;
+}
+
+
+@media (max-width: 768px) {
+    .relógio {
+        width: 20rem;
+        height: 10rem;
+    }
+    
+    .tela {
+        font-size: 3rem;
+    }
+    
+    #zona-horaria-select {
+        font-size: 1.2rem;
+    }
+}
